@@ -1,0 +1,100 @@
+Classfile /G:/学习/github_repo/Java_Learn_Pro/target/classes/com/leopo/week1/question1/ByteCodeTestDemo.class
+  Last modified 2020-10-20; size 561 bytes
+  MD5 checksum 82a37442a52fdc991be80b580e415917
+  Compiled from "ByteCodeTestDemo.java"
+public class com.leopo.week1.question1.ByteCodeTestDemo
+  minor version: 0
+  major version: 49
+  flags: ACC_PUBLIC, ACC_SUPER            //public类
+Constant pool:                            //常量池
+   #1 = Methodref          #3.#20         // java/lang/Object."<init>":()V
+   #2 = Class              #21            // com/leopo/week1/question1/ByteCodeTestDemo
+   #3 = Class              #22            // java/lang/Object
+   #4 = Utf8               <init>
+   #5 = Utf8               ()V
+   #6 = Utf8               Code
+   #7 = Utf8               LineNumberTable
+   #8 = Utf8               LocalVariableTable
+   #9 = Utf8               this
+  #10 = Utf8               Lcom/leopo/week1/question1/ByteCodeTestDemo;
+  #11 = Utf8               main
+  #12 = Utf8               ([Ljava/lang/String;)V
+  #13 = Utf8               index
+  #14 = Utf8               I
+  #15 = Utf8               args
+  #16 = Utf8               [Ljava/lang/String;
+  #17 = Utf8               sum
+  #18 = Utf8               SourceFile
+  #19 = Utf8               ByteCodeTestDemo.java
+  #20 = NameAndType        #4:#5          // "<init>":()V
+  #21 = Utf8               com/leopo/week1/question1/ByteCodeTestDemo
+  #22 = Utf8               java/lang/Object
+{
+  public com.leopo.week1.question1.ByteCodeTestDemo();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 6: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lcom/leopo/week1/question1/ByteCodeTestDemo;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC                        //静态、公共方法
+    Code:
+      stack=2, locals=3, args_size=1                     //操作数栈分配2个空间,局部变量表分配3个空间
+           0: iconst_0                                   //定义int常量0
+           1: istore_1                                   //把上面定义的常量写到变量表的1位置，即sum
+           2: iconst_0                                   //定义int常量0
+           3: istore_2                                   //把上面定义的常量写到变量表的2位置，即index
+           4: iload_2                                    //加载index到栈中
+           5: bipush        10                           //把int常量值10压入栈中
+           7: if_icmpge     33                           //for循环内的比较，用的是4和5标号压入栈的数，如果不满足，跳到33
+          10: iload_1                                    //把sum压入栈中
+          11: bipush        20                           //把int常量值20压入栈中
+          13: if_icmpge     23                           //for循环内的if比较，用的是10、11标号压入栈的数，如果不满足，跳到标号23
+          16: iload_1                                    //sum压入栈
+          17: iload_2                                    //index压入栈
+          18: imul                                       //sum*index
+          19: istore_1                                   //标号18的结果存入sum
+          20: goto          27                           //跳转到标号27
+          23: iload_1                                    //sum压入栈
+          24: iload_2                                    //index压入栈
+          25: iadd                                       //sum+index
+          26: istore_1                                   //标号25的结果存入sum
+          27: iinc          2, 1                         //变量表2位置的值加1，即index加1
+          30: goto          4                            //跳转到标号4
+          33: iinc          1, -1                        //sum减1，此处和加用的一个字节码操作符，说明没有减的操作字节码
+          36: iload_1                                    //sum压入栈
+          37: iload_1                                    //sum压入栈
+          38: imul                                       //sum*sum
+          39: istore_1                                   //将38号的结果存入变量表
+          40: iload_1                                    //sum压入栈
+          41: iconst_2                                   //定义常量2，较小数用iconst_x，较大数用bipush
+          42: idiv                                       //sum/2
+          43: istore_1                                   //将42号的结果存入sum对应的变量表中的位置中
+          44: return                                     //返回
+      LineNumberTable:                                   //代码和标号的对应关系
+        line 10: 0
+        line 12: 2
+        line 13: 10
+        line 14: 16
+        line 16: 23
+        line 12: 27
+        line 19: 33
+        line 20: 36
+        line 21: 40
+        line 22: 44
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            4      29     2 index   I
+            0      45     0  args   [Ljava/lang/String;
+            2      43     1   sum   I
+}
+SourceFile: "ByteCodeTestDemo.java"

@@ -1,0 +1,94 @@
+C:\Users\Administrator\Downloads>sb -u http://localhost:8088/api/hello -c 20 -N 60
+Starting at 2020/10/28 0:22:03
+[Press C to stop the test]
+261744  (RPS: 4064.5)
+---------------Finished!----------------
+Finished at 2020/10/28 0:23:07 (took 00:01:04.5786594)
+Status 200:    261744
+
+RPS: 4280 (requests/second)
+Max: 138ms
+Min: 0ms
+Avg: 0.2ms
+
+  50%   below 0ms
+  60%   below 0ms
+  70%   below 0ms
+  80%   below 0ms
+  90%   below 0ms
+  95%   below 1ms
+  98%   below 3ms
+  99%   below 4ms
+99.9%   below 8ms
+
+C:\Users\Administrator\Downloads>sb -u http://localhost:8088/api/hello -c 20 -N 60
+Starting at 2020/10/28 0:24:25
+[Press C to stop the test]
+236785  (RPS: 3668.5)
+---------------Finished!----------------
+Finished at 2020/10/28 0:25:30 (took 00:01:04.7227831)
+Status 200:    236785
+
+RPS: 3871.2 (requests/second)
+Max: 277ms
+Min: 0ms
+Avg: 0.2ms
+
+  50%   below 0ms
+  60%   below 0ms
+  70%   below 0ms
+  80%   below 0ms
+  90%   below 0ms
+  95%   below 1ms
+  98%   below 3ms
+  99%   below 4ms
+99.9%   below 10ms
+
+
+
+
+C:\Users\Administrator\Downloads>sb -u http://localhost:8088/api/hello -c 20 -N 60
+Starting at 2020/10/28 0:26:15
+[Press C to stop the test]
+241474  (RPS: 3743.3)
+---------------Finished!----------------
+Finished at 2020/10/28 0:27:20 (took 00:01:04.7030604)
+Status 200:    241477
+
+RPS: 3947.3 (requests/second)
+Max: 211ms
+Min: 0ms
+Avg: 0.3ms
+
+  50%   below 0ms
+  60%   below 0ms
+  70%   below 0ms
+  80%   below 0ms
+  90%   below 1ms
+  95%   below 2ms
+  98%   below 3ms
+  99%   below 4ms
+99.9%   below 9ms
+
+C:\Users\Administrator\Downloads>sb -u http://localhost:8088/api/hello -c 20 -N 60
+Starting at 2020/10/28 0:29:03
+[Press C to stop the test]
+251338  (RPS: 3900.1)
+---------------Finished!----------------
+Finished at 2020/10/28 0:30:08 (took 00:01:04.6110580)
+Status 200:    251344
+
+RPS: 4110.4 (requests/second)
+Max: 253ms
+Min: 0ms
+Avg: 0.2ms
+
+  50%   below 0ms
+  60%   below 0ms
+  70%   below 0ms
+  80%   below 0ms
+  90%   below 0ms
+  95%   below 1ms
+  98%   below 3ms
+  99%   below 4ms
+99.9%   below 9ms

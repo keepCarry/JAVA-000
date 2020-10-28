@@ -1,0 +1,90 @@
+Starting at 2020/10/28 22:35:24
+[Press C to stop the test]
+1434    (RPS: 41.9)
+---------------Finished!----------------
+Finished at 2020/10/28 22:35:58 (took 00:00:34.2601344)
+1450    (RPS: 42.4)                     Status 200:    1450
+
+RPS: 46.6 (requests/second)
+Max: 497ms
+Min: 96ms
+Avg: 414.4ms
+
+  50%   below 417ms
+  60%   below 420ms
+  70%   below 422ms
+  80%   below 423ms
+  90%   below 425ms
+  95%   below 426ms
+  98%   below 428ms
+  99%   below 430ms
+99.9%   below 473ms
+
+
+Starting at 2020/10/28 21:55:35
+[Press C to stop the test]
+27613   (RPS: 810.1)
+---------------Finished!----------------
+Finished at 2020/10/28 21:56:09 (took 00:00:34.2656662)
+Status 200:    27232
+Status 303:    381
+
+RPS: 886.3 (requests/second)
+Max: 103ms
+Min: 19ms
+Avg: 20.6ms
+
+  50%   below 20ms
+  60%   below 21ms
+  70%   below 21ms
+  80%   below 21ms
+  90%   below 21ms
+  95%   below 22ms
+  98%   below 22ms
+  99%   below 23ms
+99.9%   below 42ms
+
+Starting at 2020/10/28 22:15:11
+[Press C to stop the test]
+49620   (RPS: 1454.1)
+---------------Finished!----------------
+Finished at 2020/10/28 22:15:46 (took 00:00:34.3483524)
+Status 200:    48939
+Status 303:    681
+
+RPS: 1590.2 (requests/second)
+Max: 162ms
+Min: 19ms
+Avg: 21.6ms
+
+  50%   below 21ms
+  60%   below 21ms
+  70%   below 21ms
+  80%   below 21ms
+  90%   below 22ms
+  95%   below 24ms
+  98%   below 30ms
+  99%   below 39ms
+99.9%   below 133ms
+
+Starting at 2020/10/28 22:32:08
+[Press C to stop the test]
+148138  (RPS: 4330.1)
+---------------Finished!----------------
+Finished at 2020/10/28 22:32:43 (took 00:00:34.4547993)
+Status 200:    148144
+
+RPS: 4745.7 (requests/second)
+Max: 184ms
+Min: 0ms
+Avg: 0.5ms
+
+  50%   below 0ms
+  60%   below 0ms
+  70%   below 0ms
+  80%   below 0ms
+  90%   below 0ms
+  95%   below 3ms
+  98%   below 6ms
+  99%   below 9ms
+99.9%   below 26ms

@@ -1,0 +1,24 @@
+java -Xloggc:gc.demp.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis
+java -Xloggc:gc.demp.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis
+java -Xloggc:gc.demp.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis
+java -Xloggc:gc.demp.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis
+java -Xloggc:gc.demp.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis
+
+java -Xloggc:gc.demp.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis
+java -Xloggc:gc.demp.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis
+java -Xloggc:gc.demp.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis
+java -Xloggc:gc.demp.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis
+java -Xloggc:gc.demp.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis
+
+java -Xloggc:gc.demp.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis
+java -Xloggc:gc.demp.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis
+java -Xloggc:gc.demp.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis
+java -Xloggc:gc.demp.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis
+java -Xloggc:gc.demp.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis
+
+java -Xloggc:gc.demp.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis
+java -Xloggc:gc.demp.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis
+java -Xloggc:gc.demp.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis
+java -Xloggc:gc.demp.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis
+java -Xloggc:gc.demp.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis
+

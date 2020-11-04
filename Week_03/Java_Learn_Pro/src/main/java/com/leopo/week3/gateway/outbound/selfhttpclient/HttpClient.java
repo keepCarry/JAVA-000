@@ -38,29 +38,20 @@ public class HttpClient {
     public void httpGet(final FullHttpRequest inbound, final ChannelHandlerContext ctx, final String url) throws IOException {
         HttpGet httpGet = new HttpGet(url);
         response = httpclient.execute(httpGet);
-
-        // 获取返回内容并输出
         String content = EntityUtils.toString(response.getEntity(), "UTF-8");
-
-        // 确认过滤器一定是将这个头加进去了。
         System.out.println(inbound.headers().get("nio"));
         FullHttpResponse response = null;
         response = new DefaultFullHttpResponse(HTTP_1_1, OK, Unpooled.wrappedBuffer(content.getBytes()));
         response.headers().set("Content-Type", "application/json");
         response.headers().setInt("Content-Length", response.content().readableBytes());
-
-        // 将经过了过滤器之后的所有的头加入到response的头里面
         for (Map.Entry<String, String> head : inbound.headers()) {
             response.headers().add(head.getKey(), head.getValue());
         }
-
-
 
         if (inbound != null) {
             if (!HttpUtil.isKeepAlive(inbound)) {
                 ctx.write(response).addListener(ChannelFutureListener.CLOSE);
             } else {
-                //response.headers().set(CONNECTION, KEEP_ALIVE);
                 ctx.write(response);
             }
         }
@@ -68,16 +59,11 @@ public class HttpClient {
     }
 
     public static void main(String[] args) {
-        // 创建http get请求
         HttpGet httpGet = new HttpGet("http://localhost:8809/test");
-
         try (
-                // 创建http对象
                 CloseableHttpClient httpClient = HttpClients.createDefault();
-                // 创建http response
                 CloseableHttpResponse response = httpClient.execute(httpGet);
         ) {
-            // 获取返回内容并输出
             String content = EntityUtils.toString(response.getEntity(), "UTF-8");
             System.out.println(content);
 

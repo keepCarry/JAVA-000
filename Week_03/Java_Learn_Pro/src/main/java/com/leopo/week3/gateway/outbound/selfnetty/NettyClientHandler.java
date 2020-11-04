@@ -30,7 +30,7 @@ public class NettyClientHandler extends ChannelInboundHandlerAdapter {
     @Override
     public void channelRead(ChannelHandlerContext channelHandlerContext, Object msg) throws UnsupportedEncodingException {
         if (msg instanceof HttpResponse) {
-            System.out.println("网关收到服务端返回的消息");
+            System.out.println("收到服务端返回的消息");
             HttpResponse response = (HttpResponse) msg;
             response.headers().set("Content-Type", "application/json");
 

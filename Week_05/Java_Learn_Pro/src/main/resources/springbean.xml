@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+ 	http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--1.使用构造注入方式装配Student实例 -->
+    <bean id="student1" class="com.leopo.week5.bizuo1.vo.Student">
+        <constructor-arg index="0" value="张三" />
+        <constructor-arg index="1" value="0" />
+    </bean>
+    <!--2.使用设值注入方式装配Student实例 -->
+    <bean id="student2" class="com.leopo.week5.bizuo1.vo.Student">
+        <property name="name" value="李四"></property>
+        <property name="sex" value="1"></property>
+    </bean>
+</beans>
+
+

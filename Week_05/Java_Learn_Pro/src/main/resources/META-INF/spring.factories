@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.leopo.week5.bizuo2.StudentAutoConfiguration

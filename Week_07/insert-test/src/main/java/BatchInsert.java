@@ -54,7 +54,7 @@ public class BatchInsert {
         conn.close();
     }
 
-    public static void batchInsert2() throws Exception {
+    public static void batchInsert2() throws Exception { 
         Class.forName(DRIVER_CLASS);
         Connection conn = DriverManager.getConnection(JDBC_URL, USER, PASSWORD);
 

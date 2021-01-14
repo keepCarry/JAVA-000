@@ -1,0 +1,61 @@
+version: '3'
+services:
+  redis1:
+    image: redis
+    container_name: redis1
+    network_mode: host
+    command: redis-server /usr/local/etc/redis/redis.conf
+    volumes:
+      - ./redis1.conf:/usr/local/etc/redis/redis.conf
+    ports:
+      - 7000:7000
+
+  redis2:
+    image: redis
+    container_name: redis2
+    network_mode: host
+    command: redis-server /usr/local/etc/redis/redis.conf
+    volumes:
+      - ./redis2.conf:/usr/local/etc/redis/redis.conf
+    ports:
+      - 7001:7001
+
+  redis3:
+    image: redis
+    container_name: redis3
+    network_mode: host
+    command: redis-server /usr/local/etc/redis/redis.conf
+    volumes:
+      - ./redis3.conf:/usr/local/etc/redis/redis.conf
+    ports:
+      - 7002:7002
+  
+  redis4:
+    image: redis
+    container_name: redis4
+    network_mode: host
+    command: redis-server /usr/local/etc/redis/redis.conf
+    volumes:
+      - ./redis4.conf:/usr/local/etc/redis/redis.conf
+    ports:
+      - 7003:7003
+
+  redis5:
+    image: redis
+    container_name: redis5
+    network_mode: host
+    command: redis-server /usr/local/etc/redis/redis.conf
+    volumes:
+      - ./redis5.conf:/usr/local/etc/redis/redis.conf
+    ports:
+      - 7004:7004
+
+  redis6:
+    image: redis
+    container_name: redis6
+    network_mode: host
+    command: redis-server /usr/local/etc/redis/redis.conf
+    volumes:
+      - ./redis6.conf:/usr/local/etc/redis/redis.conf
+    ports:
+      - 7005:7005
